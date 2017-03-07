@@ -17,7 +17,7 @@ exports.handler = (event, context) => {
       console.log("launch request!");
       context.succeed(
         generateResponse(
-          buildSpeechletResponse("Welcome to the n. y. c. weather skill, you may ask what is the current weather in nyc, current nyc weather, or current weather. Afterwards, the current temperature and current conditions in new york city will be given, thank you.", true),
+          buildSpeechletResponse("Welcome to the n. y. c. weather skill, you may ask, what is the weather in nyc, current nyc weather, or current weather. Afterwards, the current temperature and current conditions in new york city will be given, thank you.", true),
           {}
           )
       )
@@ -60,9 +60,13 @@ exports.handler = (event, context) => {
                 )
       
       break; // also added this break statement
+     
+     default:
+     throw "Invalid Intent"
 
+    } // this is the event request intent name end-bracket, every intent, both old and new should be contained here prior to this end-bracket
 
-    } // this is the event request type end-bracket, every intent, both old and new should be contained here prior to this end-bracket
+      break;
 
     case "SessionEndedRequest":
     // > Session Ended Request
