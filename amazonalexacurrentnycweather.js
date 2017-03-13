@@ -17,7 +17,7 @@ exports.handler = (event, context) => {
       console.log("launch request!");
       context.succeed(
         generateResponse(
-          buildSpeechletResponse("Welcome to the n. y. c. weather skill, you may ask, what is the weather in nyc, current nyc weather, or current weather. Afterwards, the current temperature and current conditions in new york city will be given, thank you.", true),
+          buildSpeechletResponse("Welcome to the big apple weather skill, you may ask, what is the weather in nyc, current nyc weather, or current weather. Afterwards, the current temperature and current conditions in new york city will be given, thank you.", true),
           {}
           )
       )
