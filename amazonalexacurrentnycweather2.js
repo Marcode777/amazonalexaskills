@@ -1,6 +1,6 @@
 var https = require("https"); //***** for being able to fetch top-selling items, I think becoming an Amazon Advertising Associate might be required in order to be able to use Amazon's Product Advertising API, unless there is another Amazon API that's available for specifically fetching top-selling items
 // I hope to still be eligible for the amazon hoodie when I publish this Alexa Skill!
-
+// ***** THIS SKILL HAS PASSED CERTIFICATION BY AMAZON AND IS NOW LIVE!!!!!*****
 
 exports.handler = (event, context) => {
 
