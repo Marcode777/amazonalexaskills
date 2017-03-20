@@ -61,6 +61,7 @@ exports.handler = (event, context) => {
       
       break; // also added this break statement
      
+     // add cases and intents here if needed
      default:
      throw "Invalid Intent"
 
